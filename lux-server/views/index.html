@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title> Lux - Home </title>
+<!-- external style sheet -->
+<link rel="stylesheet" href="/stylesheets/style.css">
+<link rel="icon" href="/images/favicon.ico" type="image/x-icon" />
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="author" content="isaac teuscher">
+</head>
+
+<body id="page-top">
+
+  <!-- nav bar on the top -->
+  <nav role="navigation" class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#home">Home</a></li>
+      <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#signin">Sign In</a></li>
+      <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#create">Create a Lux</a></li>
+      <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about">About</a>
+        <!-- <ul>
+          <li><a href="#aboutinsp">Inspiration</a></li>
+          <li><a href="#aboutme">Meet the Creator</a></li>
+        </ul> -->
+      </li>
+      <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <a id="home" class="smooth"> </a>
+  <div id="content">
+
+  <!-- welcome to LUX box and animation -->
+  <div class="svg-wrapper">
+    <svg height="60" width="320" xmlns="http://www.w3.org/2000/svg">
+      <rect class="shape" height="60" width="320" />
+      <div class="text">Welcome to LUX</div>
+    </svg>
+  </div>
+
+
+
+    <a id="signin" class="smooth"> </a>
+        <div class="spacermedium"> &nbsp; </div>
+    <div class="sectionbox">
+      <h1> Sign In </h1>
+
+<!-- SIGN UP / LOGIN FORM -->
+<div id="logform_body">
+<div class="form">
+
+<ul class="tab-group">
+  <li class="tab active"><a class="logform_a" href="#signup">Sign Up</a></li>
+  <li class="tab"><a class="logform_a" href="#login">Log In</a></li>
+</ul>
+
+<div class="tab-content">
+  <div id="signup">
+    <!-- <h1 class="logform_h1">Sign Up for Free</h1> -->
+
+    <form action="/" method="post">
+
+    <div class="top-row">
+      <div class="field-wrap">
+        <label>
+          First Name<span class="req">*</span>
+        </label>
+        <input type="text" required autocomplete="off" />
+      </div>
+
+      <div class="field-wrap">
+        <label>
+          Last Name<span class="req">*</span>
+        </label>
+        <input type="text"required autocomplete="off"/>
+      </div>
+    </div>
+
+    <div class="field-wrap">
+      <label>
+        Email Address<span class="req">*</span>
+      </label>
+      <input type="email"required autocomplete="off"/>
+    </div>
+
+    <div class="field-wrap">
+      <label>
+        Set a Password<span class="req">*</span>
+      </label>
+      <input type="password"required autocomplete="off"/>
+    </div>
+
+    <button type="submit" class="logform_button logform_button-block">Get Started</button>
+
+    </form>
+
+  </div>
+
+  <div id="login">
+    <!-- <h1 class="logform_h1">Welcome Back!</h1> -->
+
+    <form action="/" method="post">
+
+      <div class="field-wrap">
+      <label>
+        Email Address<span class="req">*</span>
+      </label>
+      <input type="email"required autocomplete="off"/>
+    </div>
+
+    <div class="field-wrap">
+      <label>
+        Password<span class="req">*</span>
+      </label>
+      <input type="password"required autocomplete="off"/>
+    </div>
+
+    <p class="forgot"><a class="logform_a" href="#">Forgot Password?</a></p>
+
+    <button class="logform_button logform_button-block">Log In</button>
+
+    </form>
+
+  </div>
+
+</div><!-- tab-content -->
+
+</div> <!-- /form -->
+</div>
+<!-- end of log form -->
+<div class="spacersmall"> &nbsp; </div>
+
+</div>
+
+<div class="spacerbig"> &nbsp; </div>
+
+  <a id="create" class="smooth"> </a>
+      <div class="spacermedium"> &nbsp; </div>
+  <div class="sectionbox">
+    <h1> Create a Lux</h1>
+
+    <!-- INFO FORM -->
+    <div class="form-style-5">
+<form>
+<fieldset>
+<legend><span class="number">1</span> Admin Info</legend>
+<!-- <label class="form5label" for="personalinfo">This info will be used to send you the link to your Lux</label> -->
+<input type="text" name="field1" placeholder="Your Name *">
+<input type="email" name="field2" placeholder="Your Email *">
+<!-- <textarea name="field3" placeholder="About yourself"></textarea> -->
+<!-- <label for="job">Interests:</label> -->
+</fieldset>
+<fieldset>
+<legend><span class="number">2</span> Lux Info</legend>
+<input type="text" name="field3" placeholder="Name of your Lux">
+<textarea name="field4" placeholder="Description of your Lux"></textarea>
+</fieldset>
+<fieldset>
+<legend><span class="number">3</span> Questions</legend>
+<!-- <label class="form5label" for="questions">Use as many boxes as you have questions (one per box)</label> -->
+<textarea name="field5" placeholder="First question"></textarea>
+<textarea name="field6" placeholder="Second question"></textarea>
+<textarea name="field7" placeholder="Third question"></textarea>
+</fieldset>
+<input type="submit" value="Create Lux" />
+</form>
+</div>
+<div class="spacersmall"> &nbsp; </div>
+  </div>
+
+<div class="spacerbig"> &nbsp; </div>
+
+  <a id="about" class="smooth"> </a>
+      <div class="spacermedium"> &nbsp; </div>
+  <div class="sectionbox">
+    <h1> About </h1>
+
+    <!-- heart animation -->
+    <!-- <svg class="heart-loader animate" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewbox="0 0 90 90" version="1.1">
+<g class="heart-loader__group animate">
+  <path class="heart-loader__square animate" stroke-width="1" fill="none" d="M0,30 0,90 60,90 60,30z"/>
+  <path class="heart-loader__circle m--left animate" stroke-width="1" fill="none" d="M60,60 a30,30 0 0,1 -60,0 a30,30 0 0,1 60,0"/>
+  <path class="heart-loader__circle m--right animate" stroke-width="1" fill="none" d="M60,60 a30,30 0 0,1 -60,0 a30,30 0 0,1 60,0"/>
+  <path class="heart-loader__heartPath animate" stroke-width="2" d="M60,30 a30,30 0 0,1 0,60 L0,90 0,30 a30,30 0 0,1 60,0" />
+</g>
+</svg> -->
+
+      <a id="aboutinsp" class="smooth"> </a>
+      <h2> Project Inspiration </h2>
+      <div class="spacersmall"> &nbsp; </div>
+
+      <a id="aboutme" class="smooth"> </a>
+      <h2> Meet the Creator </h2>
+      <div class="spacersmall"> &nbsp; </div>
+  </div>
+
+  <div class="spacerbig"> &nbsp; </div>
+
+  <a id="contact" class="smooth"> </a>
+      <div class="spacermedium"> &nbsp; </div>
+  <div class="sectionbox">
+    <h1> Contact </h1>
+
+    <!-- <a class="button" href="mailto:iteuscher@headroyce.org">Email me</a> -->
+<div id="socialbox">
+    <a href="https://www.facebook.com/isaac.teuscher" class="c-link c-link--facebook c-tooltip" aria-label="Facebook">
+    <svg class="c-icon"><use xlink:href="#icon--facebook"></use></svg>
+</a>
+
+<a href="https://www.instagram.com/isaac.teuscher/" class="c-link c-link--instagram c-tooltip" aria-label="Instagram">
+    <svg class="c-icon"><use xlink:href="#icon--instagram"></use></svg>
+</a>
+
+<a href="https://twitter.com/ihteuscher" class="c-link c-link--twitter c-tooltip" aria-label="Twitter">
+    <svg class="c-icon"><use xlink:href="#icon--twitter"></use></svg>
+</a>
+
+<a href="https://www.linkedin.com/in/isaacteuscher" class="c-link c-link--linkedin c-tooltip" aria-label="LinkedIn">
+    <svg class="c-icon"><use xlink:href="#icon--linkedin"></use></svg>
+</a>
+
+<!-- <a href="https://github.com/iteuscher/" class="c-link c-link--github c-tooltip" aria-label="Github">
+    <svg class="c-icon"><use xlink:href="#icon--github"></use></svg>
+</a> -->
+
+<a href="mailto:iteuscher@headroyce.org" class="c-link c-link--email c-tooltip" aria-label="Email">
+    <svg class="c-icon"><use xlink:href="#icon--email"></use></svg>
+</a>
+
+<svg style="display: none">
+    <symbol id="icon--facebook" viewbox="0 0 24 24">
+        <path d="M19,4V7H17A1,1 0 0,0 16,8V10H19V13H16V20H13V13H11V10H13V7.5C13,5.56 14.57,4 16.5,4M20,2H4A2,2 0 0,0 2,4V20A2,2 0 0,0 4,22H20A2,2 0 0,0 22,20V4C22,2.89 21.1,2 20,2Z" />
+    </symbol>
+    <symbol id="icon--twitter" viewbox="0 0 24 24">
+        <path d="M17.71,9.33C17.64,13.95 14.69,17.11 10.28,17.31C8.46,17.39 7.15,16.81 6,16.08C7.34,16.29 9,15.76 9.9,15C8.58,14.86 7.81,14.19 7.44,13.12C7.82,13.18 8.22,13.16 8.58,13.09C7.39,12.69 6.54,11.95 6.5,10.41C6.83,10.57 7.18,10.71 7.64,10.74C6.75,10.23 6.1,8.38 6.85,7.16C8.17,8.61 9.76,9.79 12.37,9.95C11.71,7.15 15.42,5.63 16.97,7.5C17.63,7.38 18.16,7.14 18.68,6.86C18.47,7.5 18.06,7.97 17.56,8.33C18.1,8.26 18.59,8.13 19,7.92C18.75,8.45 18.19,8.93 17.71,9.33M20,2H4A2,2 0 0,0 2,4V20A2,2 0 0,0 4,22H20A2,2 0 0,0 22,20V4C22,2.89 21.1,2 20,2Z" />
+    </symbol>
+    <symbol id="icon--linkedin" viewbox="0 0 24 24">
+        <path d="M19,19H16V13.7A1.5,1.5 0 0,0 14.5,12.2A1.5,1.5 0 0,0 13,13.7V19H10V10H13V11.2C13.5,10.36 14.59,9.8 15.5,9.8A3.5,3.5 0 0,1 19,13.3M6.5,8.31C5.5,8.31 4.69,7.5 4.69,6.5A1.81,1.81 0 0,1 6.5,4.69C7.5,4.69 8.31,5.5 8.31,6.5A1.81,1.81 0 0,1 6.5,8.31M8,19H5V10H8M20,2H4C2.89,2 2,2.89 2,4V20A2,2 0 0,0 4,22H20A2,2 0 0,0 22,20V4C22,2.89 21.1,2 20,2Z" />
+    </symbol>
+    <symbol id="icon--email" viewbox="0 0 24 24">
+        <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z" />
+    </symbol>
+    <symbol id="icon--instagram" viewbox="0 0 24 24">
+        <path d="M7.8,2H16.2C19.4,2 22,4.6 22,7.8V16.2A5.8,5.8 0 0,1 16.2,22H7.8C4.6,22 2,19.4 2,16.2V7.8A5.8,5.8 0 0,1 7.8,2M7.6,4A3.6,3.6 0 0,0 4,7.6V16.4C4,18.39 5.61,20 7.6,20H16.4A3.6,3.6 0 0,0 20,16.4V7.6C20,5.61 18.39,4 16.4,4H7.6M17.25,5.5A1.25,1.25 0 0,1 18.5,6.75A1.25,1.25 0 0,1 17.25,8A1.25,1.25 0 0,1 16,6.75A1.25,1.25 0 0,1 17.25,5.5M12,7A5,5 0 0,1 17,12A5,5 0 0,1 12,17A5,5 0 0,1 7,12A5,5 0 0,1 12,7M12,9A3,3 0 0,0 9,12A3,3 0 0,0 12,15A3,3 0 0,0 15,12A3,3 0 0,0 12,9Z" />
+    </symbol>
+    <!-- <symbol id="icon--github" viewbox="0 0 24 24">
+        <path d="M8,0 C3.58,0 0,3.58 0,8 C0,11.54 2.29,14.53 5.47,15.59 C5.87,15.66 6.02,15.42 6.02,15.21 C6.02,15.02 6.01,14.39 6.01,13.72 C4,14.09 3.48,13.23 3.32,12.78 C3.23,12.55 2.84,11.84 2.5,11.65 C2.22,11.5 1.82,11.13 2.49,11.12 C3.12,11.11 3.57,11.7 3.72,11.94 C4.44,13.15 5.59,12.81 6.05,12.6 C6.12,12.08 6.33,11.73 6.56,11.53 C4.78,11.33 2.92,10.64 2.92,7.58 C2.92,6.71 3.23,5.99 3.74,5.43 C3.66,5.23 3.38,4.41 3.82,3.31 C3.82,3.31 4.49,3.1 6.02,4.13 C6.66,3.95 7.34,3.86 8.02,3.86 C8.7,3.86 9.38,3.95 10.02,4.13 C11.55,3.09 12.22,3.31 12.22,3.31 C12.66,4.41 12.38,5.23 12.3,5.43 C12.81,5.99 13.12,6.7 13.12,7.58 C13.12,10.65 11.25,11.33 9.47,11.53 C9.76,11.78 10.01,12.26 10.01,13.01 C10.01,14.08 10,14.94 10,15.21 C10,15.42 10.15,15.67 10.55,15.59 C13.71,14.53 16,11.53 16,8 C16,3.58 12.42,0 8,0 L8,0 Z" />
+    </symbol> -->
+</svg>
+</div>
+
+  </div>
+
+  <div class="spacerbig"> &nbsp; </div>
+
+</div>
+
+<!-- Java Script below -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+
+
+<!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+    <!-- Custom JavaScript for this theme -->
+    <script src="js/scrolling-nav.js"></script>
+
+
+
+
+<!-- Smooth scrolling -->
+<script>
+
+// Select all links with hashes
+$('a[href*="#"]')
+  // Remove links that don't actually link to anything
+  .not('[href="#"]')
+  .not('[href="#0"]')
+
+  // don't want scrolling to top for switching between tabs of sign up and log in in log form
+  .not('[href="#signup"]')
+  .not('[href="#login"]')
+
+  .click(function(event) {
+    // On-page links
+    if (
+      location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '')
+      &&
+      location.hostname == this.hostname
+    ) {
+      // Figure out element to scroll to
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+      // Does a scroll target exist?
+      if (target.length) {
+        // Only prevent default if animation is actually gonna happen
+        event.preventDefault();
+        $('html, body').animate({
+          scrollTop: target.offset().top
+        }, 1000, function() {
+          // Callback after animation
+          // Must change focus!
+          var $target = $(target);
+          $target.focus();
+          if ($target.is(":focus")) { // Checking if the target was focused
+            return false;
+          } else {
+            $target.attr('tabindex','-1'); // Adding tabindex for elements not focusable
+            $target.focus(); // Set focus again
+          };
+        });
+      }
+    }
+  });
+
+
+  //sign in / log in form
+  $('.form').find('input, textarea').on('keyup blur focus', function (e) {
+
+  var $this = $(this),
+      label = $this.prev('label');
+
+	  if (e.type === 'keyup') {
+			if ($this.val() === '') {
+          label.removeClass('active highlight');
+        } else {
+          label.addClass('active highlight');
+        }
+    } else if (e.type === 'blur') {
+    	if( $this.val() === '' ) {
+    		label.removeClass('active highlight');
+			} else {
+		    label.removeClass('highlight');
+			}
+    } else if (e.type === 'focus') {
+
+      if( $this.val() === '' ) {
+    		label.removeClass('highlight');
+			}
+      else if( $this.val() !== '' ) {
+		    label.addClass('highlight');
+			}
+    }
+
+});
+
+$('.tab a').on('click', function (e) {
+
+  e.preventDefault();
+
+  $(this).parent().addClass('active');
+  $(this).parent().siblings().removeClass('active');
+
+  target = $(this).attr('href');
+
+  $('.tab-content > div').not(target).hide();
+
+  $(target).fadeIn(600);
+
+});
+
+
+</script>
+
+
+</body>
+</html>
