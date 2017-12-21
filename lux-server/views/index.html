@@ -16,7 +16,7 @@
   <nav role="navigation" class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav">
     <ul class="navbar-nav ml-auto">
       <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#home">Home</a></li>
-      <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#signin">Sign In</a></li>
+      <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#signin">Sign Up/In</a></li>
       <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#create">Create a Lux</a></li>
       <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about">About</a>
         <!-- <ul>
@@ -40,40 +40,39 @@
   </div>
 
 
-
     <a id="signin" class="smooth"> </a>
         <div class="spacermedium"> &nbsp; </div>
     <div class="sectionbox">
-      <h1> Sign In </h1>
+      <h1> Sign Up/In </h1>
 
-<!-- SIGN UP / LOGIN FORM -->
+<!-- SIGN UP/IN FORM -->
 <div id="logform_body">
 <div class="form">
 
 <ul class="tab-group">
   <li class="tab active"><a class="logform_a" href="#signup">Sign Up</a></li>
-  <li class="tab"><a class="logform_a" href="#login">Log In</a></li>
+  <li class="tab"><a class="logform_a" href="#login">Sign In</a></li>
 </ul>
 
 <div class="tab-content">
   <div id="signup">
     <!-- <h1 class="logform_h1">Sign Up for Free</h1> -->
 
-    <form action="/" method="post">
+    <form class="CreateUserForm">
 
     <div class="top-row">
       <div class="field-wrap">
         <label>
           First Name<span class="req">*</span>
         </label>
-        <input type="text" required autocomplete="off" />
+        <input type="text" class="firstname" required autocomplete="off" />
       </div>
 
       <div class="field-wrap">
         <label>
           Last Name<span class="req">*</span>
         </label>
-        <input type="text"required autocomplete="off"/>
+        <input type="text" class="lastname" required autocomplete="off"/>
       </div>
     </div>
 
@@ -81,17 +80,17 @@
       <label>
         Email Address<span class="req">*</span>
       </label>
-      <input type="email"required autocomplete="off"/>
+      <input type="email" class="email" required autocomplete="off"/>
     </div>
 
     <div class="field-wrap">
       <label>
         Set a Password<span class="req">*</span>
       </label>
-      <input type="password"required autocomplete="off"/>
+      <input type="password" class="password" required autocomplete="off"/>
     </div>
 
-    <button type="submit" class="logform_button logform_button-block">Get Started</button>
+    <button class="createUserButton logform_button logform_button-block">Get Started</button>
 
     </form>
 
@@ -263,6 +262,9 @@
 
 <!-- smooth scrolling script -->
 <script src="/javascripts/smoothscrolling.js"> </script>
+
+<!-- create user query selector and post method-->
+<script src="/javascripts/create-user.js"></script>
 
 
 </body>
