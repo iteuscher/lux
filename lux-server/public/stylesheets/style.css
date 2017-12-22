@@ -1,5 +1,5 @@
-@import url(https://fonts.googleapis.com/css?family=Lato);
-@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css);
+/* @import url(https://fonts.googleapis.com/css?family=Lato);
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css); */
 
 body {
   background: rgb(20,20,20);
@@ -15,6 +15,11 @@ body {
   height: 100vh;
 }
 
+p {
+    line-height: 130%;
+    margin-top: 1ex;
+}
+
 a {
     text-decoration: none;
     color: inherit;
@@ -24,6 +29,21 @@ h1 {
     margin: 0 auto;
     padding: 2ex;
     font-family: 'Roboto Condensed';
+}
+
+h3 {
+  font-family: 'Roboto Condensed';
+  font-size: 22px;
+  margin-bottom: 0.5ex;
+  margin-top: 0;
+}
+
+.accent-underline {
+padding: 0;
+margin: 0 auto;
+margin-bottom: 0;
+border-top: 3.5px solid #1abc9c;
+width: 7ex;
 }
 
 .button {
@@ -62,6 +82,10 @@ h1 {
   color: rgb(20,20,20);
   align-content: center;
   text-align: center;
+}
+
+.textcontainer {
+  margin: 5ex;
 }
 
 /* welcome to lux animation box */
@@ -127,7 +151,7 @@ nav{
       transition: all .2s ease-in-out;
     }
 
-    /*nav ul li:hover{background: #1abc9c;}*/
+    /*nav ul li:hover{background: #1dd2af;}*/
     nav ul li:hover > ul{display: block;}
     nav ul li{
       float: left;
@@ -270,7 +294,7 @@ nav{
     text-align: center;
     font-style: normal;
     width: 100%;
-    border: 1px solid #16a085;
+    border: 1px solid #1abc9c;
     border-width: 1px 1px 3px;
     margin-bottom: 10px;
     transition: all 0.5s ease;
@@ -278,7 +302,7 @@ nav{
 .form-style-5 input[type="submit"]:hover,
 .form-style-5 input[type="button"]:hover
 {
-    background: #109177;
+    background: #1dd2af;
 }
 
 
@@ -293,11 +317,11 @@ nav{
 }
 .logform_a {
   text-decoration: none;
-  color: #1ab188;
+  color: #1abc9c;
   transition: 0.5s ease;
 }
 .logform_a:hover {
-  color: #1ab188;
+  color: #1dd2af;
 }
 .form {
   color: #8a97a0;
@@ -339,11 +363,11 @@ nav{
   transition: 0.5s ease;
 }
 .tab-group li a:hover {
-  background: #179b77;
+  background: #1dd2af;
   color: #fff;
 }
 .tab-group .active a {
-  background: #1ab188;
+  background: #1abc9c;
   color: #fff;
 }
 .tab-content > div:last-child {
@@ -367,7 +391,7 @@ label {
 }
 label .req {
   margin: 2px;
-  color: #1ab188;
+  color: #1abc9c;
 }
 label.active {
   transform: translateY(50px);
@@ -398,7 +422,7 @@ input, textarea {
   margin-bottom: 10px;
 }
 input:focus, textarea:focus {
-      border: 1px solid #1abc9c;
+      border: 1px solid #1dd2af;
       padding: 7px;
 }
 textarea {
@@ -434,13 +458,13 @@ textarea {
     text-align: center;
     font-style: normal;
     width: 100%;
-    border: 1px solid #16a085;
+    border: 1px solid #1abc9c;
     border-width: 1px 1px 3px;
     margin-bottom: 10px;
     transition: all 0.5s ease;
 }
 .logform_button:hover, .logform_button:focus {
-  background: #179b77;
+  background: #1dd2af;
   transition: all 0.5s ease;
 }
 .logform_button-block {
