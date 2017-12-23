@@ -54,9 +54,23 @@ width: 7ex;
   font-family: 'Roboto Condensed';
   color: white;
   text-align: center;
-  font-size: 22px;
+  font-size: 24px;
   text-decoration: none;
   border-radius: 9px;
+}
+
+.addInputButton {
+  position: relative;
+  margin: 1ex auto;
+  margin-bottom: 3ex;
+  padding: 1ex;
+  border: 1.2px solid #1abc9c;
+  border-radius: 6px;
+  background-color: #e8eeef;
+  color: #323232;
+  text-align: center;
+  font-size: 17px;
+
 }
 
 .spacersmall {

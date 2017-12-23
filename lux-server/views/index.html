@@ -158,9 +158,36 @@
 <fieldset>
 <legend><span class="number">3</span> Questions</legend>
 <!-- <label class="form5label" for="questions">Use as many boxes as you have questions (one per box)</label> -->
-<textarea name="field5" placeholder="First question"></textarea>
-<textarea name="field6" placeholder="Second question"></textarea>
-<textarea name="field7" placeholder="Third question"></textarea>
+
+<div id="dynamicInput">
+        <textarea name="myInputs[]" placeholder="Question 1"></textarea>
+        <textarea name="myInputs[]" placeholder="Question 2"></textarea>
+</div>
+  <input class="button addInputButton" value="Add question" onclick="addInput('dynamicInput');"/>
+  <!-- <input class="button addInputButton" value="Remove question" onclick="removeInput('dynamicInput');"/> -->
+
+<script>
+  var numofquestions = 2
+function addInput(divName){
+     // if (counter == limit)  { alert("You have reached the limit of adding " + counter + " inputs"); }
+     // else {
+          let newdiv = document.createElement('div');
+          newdiv.innerHTML = "<textarea name='myInputs[]' placeholder='" + "Question " + (numofquestions + 1) + "'></textarea>";
+          document.getElementById(divName).appendChild(newdiv);
+          numofquestions++;
+      }  // }
+  // function removeInput(divname){
+  // if (numofquestions == 1)  { alert("You can't have zero questions!"); }
+  // else {
+  //   let questions = document.getElementById('dynamicInput')
+  //   console.log('numofquestions is at: ' + numofquestions);
+  //   questions.removeChild(questions.childNodes[numofquestions-1]);
+  //   numofquestions--;
+  //   }
+  // }
+</script>
+
+
 </fieldset>
 <input type="submit" value="Create Lux" />
 </form>

@@ -1,6 +1,8 @@
 extends layout
 
 block content
-  h1= message
-  h2= error.status
-  pre #{error.stack}
+    h1(style='color: white')= message
+    h1(style='color: white')= error.status
+    pre(style='color: white') #{error.stack}
+    h1
+    a(href='/', style='color: white; font-size: 25px;') Return to Homepage
