@@ -37,6 +37,19 @@ app.post('/createUser', (req, res) => {
     .then(() => res.sendStatus(200));
 });
 
+app.post('/login', (req, res) => {
+  store
+    .authenticate({
+      email: req.body.email,
+      password: req.body.password
+    })
+    .then(({ success }) =>{
+      if (success) res.sendStatus(200)
+      else res.sendStatus(401) //401 is unauthorized
+    })
+
+})
+
 // catch 404 and forward to error handler
 // app.use(function(req, res, next) {
 //   var err = new Error('Not Found');

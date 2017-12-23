@@ -1,5 +1,4 @@
 const CreateUserForm = document.querySelector('.CreateUserForm');
-
 CreateUserForm.addEventListener('submit', (e) => {
   e.preventDefault();
   let firstname = CreateUserForm.querySelector('.firstname').value
@@ -10,6 +9,17 @@ CreateUserForm.addEventListener('submit', (e) => {
   post('/createUser', { firstname, lastname, email, password })
 });
 
+const LoginForm = document.querySelector('.LoginForm');
+LoginForm.addEventListener('submit', (e) => {
+  e.preventDefault();
+  const email = LoginForm.querySelector('.email').value
+  const password = LoginForm.querySelector('.password').value
+  post ('/login', { email, password })
+    .then (({ status }) => {
+      if (status === 200) alert('login success!!')
+      else alert('Login Failed. Please try again.')
+    })
+});
 
 function post (path, data) {
   return window.fetch(path, {
