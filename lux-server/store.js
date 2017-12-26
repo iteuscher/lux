@@ -4,7 +4,7 @@ const knex = require('knex')(require('./knexfile'));
 module.exports = {
 
   createLux ({ adminname, adminemail, luxname, luxdescription, q1, q2 }) {
-    console.log(`Adding Lux ${luxname}, made by ${adminname} with email: ${adminemail}`);
+    console.log(`Adding Lux: ${luxname}, made by ${adminname} with email: ${adminemail}`);
     return knex('luxes').insert({
       adminname,
       adminemail,
