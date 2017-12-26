@@ -2,7 +2,20 @@ const crypto = require('crypto');
 //crypto doesn't need to be npm installed
 const knex = require('knex')(require('./knexfile'));
 module.exports = {
-  // saltHashPassword,
+
+  createLux ({ adminname, adminemail, luxname, luxdescription, q1, q2 }) {
+    console.log(`Adding Lux ${luxname}, made by ${adminname} with email: ${adminemail}`);
+    return knex('luxes').insert({
+      adminname,
+      adminemail,
+      luxname,
+      luxdescription,
+      q1,
+      q2,
+    })
+  },
+
+
   createUser ({ firstname, lastname, email, password }) {
     console.log(`Adding user: ${firstname} ${lastname} with email: ${email}`);
     const { salt, hash } = saltHashPassword({ password });
