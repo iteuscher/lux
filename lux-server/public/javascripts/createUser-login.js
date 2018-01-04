@@ -14,11 +14,17 @@ LoginForm.addEventListener('submit', (e) => {
   e.preventDefault();
   const email = LoginForm.querySelector('.email').value
   const password = LoginForm.querySelector('.password').value
+
   post ('/login', { email, password })
-    .then (({ status }) => {
-      if (status === 200) alert('login success!!')
-      else alert('Login Failed. Please try again.')
-    })
+    // .then (({ status }) => {
+    //   if (status === 200) {
+    //     alert('login of ' + email + ' was successful!')
+    //     //need to send the user to the admin page
+    //     // post('/adminpage', email);
+    //   }
+    //
+    //   if (status !== 200)  alert('Login Failed. Please try again.') ;
+    // })
 });
 
 function post (path, data) {

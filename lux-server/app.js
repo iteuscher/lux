@@ -77,10 +77,18 @@ app.post('/login', (req, res) => {
       password: req.body.password
     })
     .then(({ success }) =>{
-      if (success) res.sendStatus(200)
-      else res.sendStatus(401) //401 is unauthorized
+      if (success) {
+        // res.sendStatus(200);
+         res.redirect("/admin")
+        // res.render('admin', { title: 'Admin Page', adminname: req.body.email });
+      }
+      // else {
+      //   res.sendStatus(401)  //401 is unauthorized
+      // }
     })
 })
+
+
 
 
 app.post('/createLux', (req, res) => {
@@ -117,7 +125,7 @@ app.post('/createLux', (req, res) => {
         if (error) {
             return console.log(error);
         }
-         console.log('Welcome email sent to: ' + req.body.email); //: message %s , %s', info.messageId, info.response);
+         console.log('Welcome email sent to: ' + req.body.adminemail); //: message %s , %s', info.messageId, info.response);
             res.sendFile('index.html');
      });
 });
