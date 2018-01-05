@@ -2,8 +2,14 @@ var express = require('express');
 var router = express.Router();
 var path = require('path');
 var fs = require('fs');
+var store = require('../store');
 
 router.get('/', function(req, res, next) {
+
+  let userData = store.fetchUsers()
+  .then();
+
+  console.log (userData + '!!')
 
   let name_01 = "bob"
   let time_01 = "monday"

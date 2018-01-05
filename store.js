@@ -15,7 +15,6 @@ module.exports = {
     })
   },
 
-
   createUser ({ firstname, lastname, email, password }) {
     console.log(`Adding user: ${firstname} ${lastname} with email: ${email}`);
     const { salt, hash } = saltHashPassword({ password });
@@ -41,6 +40,22 @@ module.exports = {
         return { success: hash === user.encrypted_password}
       })
 
+  },
+
+  fetchUsers () {
+    console.log(`fetching users`)
+    let userData;
+    return knex('users')
+      .then(([user]) => {
+        userData = user
+        console.log(user.firstname)
+        console.log(user.lastname)
+        console.log(user.created_at)
+      })
+      return userData;
+    // let userData = knex('users')
+    // console.log(userData)
+    // return userData
   }
 
 };
