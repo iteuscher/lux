@@ -1,9 +1,28 @@
 var express = require('express');
 var router = express.Router();
+var path = require('path');
+var fs = require('fs');
 
-/* GET users listing. */
 router.get('/', function(req, res, next) {
-  res.send('respond with a resource');
+
+  let name_01 = "bob"
+  let time_01 = "monday"
+
+  let name_02 = "dirk"
+  let time_02 = "friday"
+
+  res.render('users', {
+      title: 'Users',
+      lux_01: [
+        name_01,
+        time_01
+      ],
+      lux_02: [
+        name_01,
+        time_02
+      ]
+  });
+
 });
 
 module.exports = router;

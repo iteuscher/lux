@@ -1,8 +1,14 @@
-extends layout
-
-block content
-    h1(style='color: white')= message
-    h1(style='color: white')= error.status
+doctype html
+html
+  head
+    title= title
+    link(rel='stylesheet', href='https://unpkg.com/purecss@1.0.0/build/pure-min.css', integrity='sha384-nn4HPE8lTHyVtfCBi5yW9d20FjT8BJwUXyWZT9InLYax14RDjBj46LmSztkmNP9w', crossorigin='anonymous')
+    link(rel='stylesheet', href='/stylesheets/style.css')
+    link(rel='favicon', href='/images/favicon.ico')
+  body
+    h1(style='color: white; padding-bottom: 8px;')= message
+    .accent-underline
+    h1(style='color: white; text-decoration: bold;')= error.status
     pre(style='color: white') #{error.stack}
     h1
-    a(href='/', style='color: white; font-size: 25px;') Return to Homepage
+    a.tohomebutton(href='/', style='color: white; font-size: 20px; border: solid 0.5px white; padding: 8px; border-radius: 5px;') Return to Homepage

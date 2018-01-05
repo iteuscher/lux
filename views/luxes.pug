@@ -1,0 +1,22 @@
+extends layout
+
+block content
+  .textcontainer
+  table.pure-table.pure-table-bordered(style='margin: 0 auto; font-size: 18px;')
+      thead
+        tr
+          th Lux ID
+          th Name
+          th Admin
+          th Question 1
+          th Question 2
+      tbody
+        tr
+          td 1
+          for data in lux_01
+            td= data
+        tr
+          td 2
+          for data in lux_02
+            td= data
+  .spacermedium

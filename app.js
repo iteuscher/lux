@@ -9,7 +9,8 @@ var bodyParser = require('body-parser');
 var index = require('./routes/index');
 var users = require('./routes/users');
 var admin = require('./routes/admin');
-var store = require('./store')
+var luxes = require('./routes/luxes');
+var store = require('./store');
 
 var app = express();
 
@@ -30,6 +31,8 @@ app.use('/', index);
 app.use('/users', users);
 
 app.use('/admin', admin);
+
+app.use('/luxes', luxes);
 
 app.post('/createUser', (req, res) => {
   store
@@ -78,13 +81,13 @@ app.post('/login', (req, res) => {
     })
     .then(({ success }) =>{
       if (success) {
-        // res.sendStatus(200);
-         res.redirect("/admin")
+         res.sendStatus(200);
+        // res.redirect("/admin")
         // res.render('admin', { title: 'Admin Page', adminname: req.body.email });
       }
-      // else {
-      //   res.sendStatus(401)  //401 is unauthorized
-      // }
+      else {
+        res.sendStatus(401)  //401 is unauthorized
+      }
     })
 })
 
