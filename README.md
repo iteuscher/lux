@@ -17,7 +17,7 @@ ________________
 The server-side runs using Node.js. The website is built with Express and the database is MySQL. There are several packages and tools in the project including pug, knex, and nodemailer which you can read more about in section 5 of this user guide. 
 To setup the server-side you will need to start both the web server and the database. 
 
---
+-
 Starting the Web Server
 1. If you don’t have Node.js installed on your computer download it here: https://nodejs.org/en/ 
 2. Unzip the project file
@@ -26,8 +26,9 @@ Starting the Web Server
 5. Now run “npm start” to start up the web server
 Your terminal should look similar to the image below:
   
---
+-
 Starting the Database
+
 Since the database runs MySQL, you need to launch it on your computer. While there are several ways to do this, I recommend using homebrew services. 
 * If you don’t have homebrew installed on your computer, you can download it here: https://brew.sh/ 
 * Once homebrew is installed, open a new command line window and run “brew services start mysql” to start mysql on your system 
@@ -51,6 +52,7 @@ ________________
 3. Project Structure
 
 Directory / File 
+
 What it is
 
 	bin
@@ -134,4 +136,5 @@ All of the code for Lux is also available on github. My username is iteuscher. Y
 
 
 Thanks,
+
 Isaac Teuscher
