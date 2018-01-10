@@ -1,7 +1,6 @@
 Lux User Guide
 
 updated Jan 2018
-
 ________________
 
 Table of Contents
@@ -15,6 +14,7 @@ Table of Contents
 
 ________________
 1.  Server-side setup
+
 The server-side runs using Node.js. The website is built with Express and the database is MySQL. There are several packages and tools in the project including pug, knex, and nodemailer which you can read more about in section 5 of this user guide. 
 To setup the server-side you will need to start both the web server and the database. 
 
@@ -45,6 +45,7 @@ Now you can see the users and luxes tables by clicking on them in the tables sec
 
 ________________
 2.  Client Access
+
 Once the web server and database are up and running, accessing the website is as simply as opening a web browser (Chrome, Firefox, Safari, etc) and typing “localhost:3000” in the address bar. Lux should load and look similar to the screenshot below.
   
 
@@ -52,8 +53,7 @@ Once the web server and database are up and running, accessing the website is as
 ________________
 3. Project Structure
 
-Directory / File 
-\n What it is
+Directory or File | What it is
 
 	bin
 	www file which app.js calls to start the server
@@ -130,6 +130,7 @@ Finally, I would also like to thank you for your interest in my project and for 
 
 ________________
 6. Contact 
+
 If you have any further questions about Lux or how to use it, please email iteuscher@headroyce.org
 
 All of the code for Lux is also available on github. My username is iteuscher. You can see the project’s code here: https://github.com/iteuscher/lux 
