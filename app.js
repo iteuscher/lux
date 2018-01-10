@@ -10,6 +10,7 @@ var index = require('./routes/index');
 var users = require('./routes/users');
 var admin = require('./routes/admin');
 var luxes = require('./routes/luxes');
+var about = require('./routes/about');
 var store = require('./store');
 
 var app = express();
@@ -29,6 +30,8 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use('/', index);
 
 app.use('/users', users);
+
+app.use('/about', about);
 
 app.use('/admin', admin);
 
