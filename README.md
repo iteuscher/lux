@@ -1,4 +1,4 @@
-#Lux User Guide
+Lux User Guide
 Jan 2018
 
 ________________
@@ -17,7 +17,7 @@ ________________
 The server-side runs using Node.js. The website is built with Express and the database is MySQL. There are several packages and tools in the project including pug, knex, and nodemailer which you can read more about in section 5 of this user guide. 
 To setup the server-side you will need to start both the web server and the database. 
 
-____
+--
 Starting the Web Server
 1. If you don’t have Node.js installed on your computer download it here: https://nodejs.org/en/ 
 2. Unzip the project file
@@ -26,7 +26,7 @@ Starting the Web Server
 5. Now run “npm start” to start up the web server
 Your terminal should look similar to the image below:
   
-____
+--
 Starting the Database
 Since the database runs MySQL, you need to launch it on your computer. While there are several ways to do this, I recommend using homebrew services. 
 * If you don’t have homebrew installed on your computer, you can download it here: https://brew.sh/ 
@@ -117,9 +117,10 @@ ________________
 Lux was created as a semester culminating project of Mr. Brian Sea’s Advanced Topics in Computer Science course. I would like to acknowledge Mr. Sea for his guidance and teaching me CS (among many other things) over the years.
 I was also taught CS by Mr. Steve Gregg who previously taught at Head-Royce. I would like to recognize Mr. Gregg for laying the base knowledge and seeds of CS curiosity in me.
 Additionally, I would like to acknowledge these tutorials which I found very helpful in creating Lux:
-Knex, MySQL Database: https://hackernoon.com/setting-up-node-js-with-a-database-part-1-3f2461bdd77f 
-Structure of Express/Node.js server: https://developer.mozilla.org/en-US/docs/Learn/Server-side/Express_Nodejs/Tutorial_local_library_website 
-Sending emails from Express/Node.js: https://appdividend.com/2017/08/11/send-email-in-node-js/ 
+
+* Knex, MySQL Database: https://hackernoon.com/setting-up-node-js-with-a-database-part-1-3f2461bdd77f 
+* Structure of Express/Node.js server: https://developer.mozilla.org/en-US/docs/Learn/Server-side/Express_Nodejs/Tutorial_local_library_website 
+* Sending emails from Express/Node.js: https://appdividend.com/2017/08/11/send-email-in-node-js/ 
 
 Finally, I would also like to thank you for your interest in my project and for reading this far in my user guide :)
 
@@ -130,7 +131,6 @@ ________________
 If you have any further questions about Lux or how to use it, please email iteuscher@headroyce.org
 
 All of the code for Lux is also available on github. My username is iteuscher. You can see the project’s code here: https://github.com/iteuscher/lux 
-
 
 
 Thanks,
